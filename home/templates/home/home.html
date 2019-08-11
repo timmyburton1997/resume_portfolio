@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Cover Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+{% load staticfiles %}
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <body class="text-center" bgcolor #000000>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+
+      <h2 class="masthead-brand" style="color:white">Timothy Burton</h2>
+         <hr/>
+      <nav class="nav nav-masthead justify-content-center">
+
+        <a class="nav-link active" style="color:white" href="#">Home</a>
+
+        <a class="nav-link" style="color:white" href="{% url 'skills' %}">Computer Skills/Strengths</a>
+        <a class="nav-link" style="color:white" href="#">Professional Development</a>
+          <a class="nav-link" style="color:white" href="#">Volunteering</a>
+        <a class="nav-link" style="color:white" href="#">Education</a>
+                  <a class="nav-link" style="color:white" href="#">Research/Design Projects</a>
+        <a class="nav-link" style="color:white" href="#">Blog</a>
+
+      </nav>
+    </div>
+  </header>
+
+
+
+  <main role="main" class="inner cover">
+      <br/>
+      <br/>
+      <img  src="{% static 'BME Graphic (2).png' %}" width="1400"/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <head>
+      <font size="+10" face="verdana" color="white">Timothy Burton</font>
+          </head>
+<hr/>
+      <br/>
+      <br/>
+      <div class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column">
+    <p class="lead text-left" style="color:white" >Hi, I'm Tim Burton. I just finished my junior year as a biomedical engineering student at Wayne State University. I am career and academically driven, including having associate certification in Solidworks. For the past year and a half, I have worked in a research laboratory designing mechanical and electrical devices. Also, I have spent the past two years working as a peer mentor supervising the academic career of freshmen engineering students and as a MATLAB peer mentor at Wayne State. Currently, I am working as a validation intern at Navient Solutions Inc.</p>
+    <p class="lead">
+         <img src="{% static 'IMG_0504.png' %}" />
+        <br/>
+        <br/>
+      <a href="mailto:timmy.burton1997@gmail.com" class="btn btn-lg btn-secondary">Email</a>
+    </p>
+          </div>
+  </main>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p style="color:white">© Timothy Burton {% now "Y" %}</p>
+    </div>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

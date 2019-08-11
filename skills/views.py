@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import Skills
 
-# Create your views here.
+def skills(request):
+    skills = Skills.objects
+    return render(request, 'skills/skills.html', {'skills': skills})
