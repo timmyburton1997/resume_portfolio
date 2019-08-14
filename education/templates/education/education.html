@@ -45,10 +45,10 @@
          <hr/>
       <nav class="nav nav-masthead justify-content-center">
 
-        <a class="nav-link active" style="color:white" href="#">Home</a>
+        <a class="nav-link active" style="color:white" href="{% url 'home' %}">Home</a>
 
         <a class="nav-link" style="color:white" href="{% url 'skills' %}">Computer Skills/Strengths</a>
-        <a class="nav-link" style="color:white" href="{% url 'jobs' %}">Professional Development</a>
+        <a class="nav-link" style="color:white" href="#">Professional Development</a>
           <a class="nav-link" style="color:white" href="#">Volunteering</a>
         <a class="nav-link" style="color:white" href="{% url 'education' %}">Education</a>
                   <a class="nav-link" style="color:white" href="#">Research/Design Projects</a>
@@ -63,26 +63,27 @@
   <main role="main" class="inner cover">
       <br/>
       <br/>
-      <img  src="{% static 'BME Graphic (2).png' %}" width="1400"/>
       <br/>
       <br/>
       <br/>
-      <br/>
-      <head>
-      <font size="+10" face="verdana" color="white">Timothy Burton</font>
-          </head>
-<hr/>
+
       <br/>
       <br/>
-      <div class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column">
-    <p class="lead text-left" style="color:white" >Hi, I'm Tim Burton. I just finished my junior year as a biomedical engineering student at Wayne State University. I am career and academically driven, including having associate certification in Solidworks. For the past year and a half, I have worked in a research laboratory designing mechanical and electrical devices. Also, I have spent the past two years working as a peer mentor supervising the academic career of freshmen engineering students and as a MATLAB peer mentor at Wayne State. Currently, I am working as a validation intern at Navient Solutions Inc.</p>
+      {% for schools in education.all %}
+
+          <img align="left" src="{{schools.image.url}}" width="50"/>
+            <br>
+          <h3 style="color:white" class="text-left">{{schools.title}}</h3>
+      <br/>
+    <p class="lead text-left" style="color:white" >{{schools.body}}</p>
     <p class="lead">
-         <img src="{% static 'IMG_0504.png' %}" />
+        <br/>
+        {% endfor %}
         <br/>
         <br/>
-      <a href="mailto:timmy.burton1997@gmail.com" class="btn btn-lg btn-secondary">Email</a>
+
     </p>
-          </div>
+
   </main>
 
   <footer class="mastfoot mt-auto">

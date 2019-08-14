@@ -19,10 +19,14 @@ from django.conf import settings
 from django.conf.urls.static import static
 import home.views
 import skills.views
+import education.views
+import jobs.views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home.views.home, name='home'),
     path('skills/', skills.views.skills, name='skills'),
+    path('education/', education.views.education, name='education'),
+    path('jobs/', jobs.views.jobs, name='jobs'),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
