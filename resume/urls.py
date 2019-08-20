@@ -21,6 +21,9 @@ import home.views
 import skills.views
 import education.views
 import jobs.views
+import volunteering.views
+import projects.views
+
 
 
 urlpatterns = [
@@ -29,4 +32,7 @@ urlpatterns = [
     path('skills/', skills.views.skills, name='skills'),
     path('education/', education.views.education, name='education'),
     path('jobs/', jobs.views.jobs, name='jobs'),
+    path('volunteering/', volunteering.views.volunteering, name='volunteering'),
+    path('projects/', projects.views.projects, name='projects'),
+    path('blog/', include('blog.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

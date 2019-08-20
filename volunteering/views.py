@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Volunteering
 
-def education(request):
+def volunteering(request):
     volunteering = Volunteering.objects
-    return render(request, 'volunteering/ducation.html', {'volunteering': volunteering})
+    return render(request, 'volunteering/volunteering.html', {'volunteering': volunteering})
